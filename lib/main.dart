@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
           return GetMaterialApp(
             // Page Routes
             getPages: appRoutes,
-            initialRoute: RoutesName.loginScreen,
+            initialRoute: RoutesName.splashScreen,
             // Initial Binding
             initialBinding: AppInitialbinding(),
           );
