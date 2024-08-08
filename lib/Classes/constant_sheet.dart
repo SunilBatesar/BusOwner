@@ -1,5 +1,6 @@
 import 'package:bus_owner/Components/Constants/style_sheet.dart';
 import 'package:bus_owner/Services/app_services.dart';
+import 'package:bus_owner/Services/appconfig.dart';
 
 class ConstantSheet {
   ConstantSheet._constructro();
@@ -19,4 +20,8 @@ class ConstantSheet {
   //  App Colors Get
   final _colors = AppColors();
   AppColors get colors => _colors;
+
+  //  App Config Get
+  final _appConfig = AppConfig();
+  AppConfig get appConfig => _appConfig;
 }

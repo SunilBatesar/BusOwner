@@ -4,8 +4,8 @@ import 'package:google_fonts/google_fonts.dart';
 
 class AppColors {
   AppColors();
-  Color bgclr = const Color(0xffF1EDED);
-  Color primary = const Color(0xff030218);
+  Color bgclr = const Color(0xffF0ECF9);
+  Color primary = const Color(0xff2ECC71);
   Color black = const Color(0xff000000);
   Color white = const Color(0xffFFFFFF);
   Color lightwhite = const Color(0xffF1EDED);
@@ -24,6 +24,9 @@ class AppColors {
 
 class AppTextTheme {
   AppTextTheme();
+  // APP TextStyle
+  TextStyle appNameTextStyle =
+      GoogleFonts.dancingScript(fontSize: 50.sp, fontWeight: FontWeight.w500);
   TextStyle fs14NormalPacifico =
       GoogleFonts.pacifico(fontSize: 14.sp, fontWeight: FontWeight.w400);
 

@@ -1,10 +1,11 @@
 class AppConfig {
   // APP NAME
-  static String appName = "Bus";
+  String appName = "jai bala ji";
   // APP LOGO
-  static String applogo = "";
+  String applogo = "assets/icons/app_logo.png";
+
   // APP SCREEN HEIGHT
-  static double screenHeight = 783;
+  double screenHeight = 783;
   // APP SCREEN WIDTH
-  static double screenWidth = 392;
+  double screenWidth = 392;
 }

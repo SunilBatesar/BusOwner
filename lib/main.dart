@@ -1,6 +1,5 @@
 import 'package:bus_owner/Classes/constant_sheet.dart';
 import 'package:bus_owner/Controllers/app_initialBinding.dart';
-import 'package:bus_owner/Services/appconfig.dart';
 import 'package:bus_owner/Utils/Routes/app_routes.dart';
 import 'package:bus_owner/Utils/Routes/routes_name.dart';
 import 'package:flutter/material.dart';
@@ -21,6 +20,8 @@ class MyApp extends StatelessWidget {
         builder: (context, child) {
           styleSheet = ConstantSheet.instance;
           return GetMaterialApp(
+            // app theme
+            theme: ThemeData(scaffoldBackgroundColor: styleSheet.colors.bgclr),
             // Page Routes
             getPages: appRoutes,
             initialRoute: RoutesName.splashScreen,
@@ -29,6 +30,6 @@ class MyApp extends StatelessWidget {
           );
         },
         // Screen Size
-        designSize: Size(AppConfig.screenWidth, AppConfig.screenHeight));
+        designSize: Size(392, 783));
   }
 }
