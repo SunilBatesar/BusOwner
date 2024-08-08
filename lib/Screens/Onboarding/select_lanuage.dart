@@ -9,18 +9,20 @@ class SelectLanuage extends StatelessWidget {
   Widget build(BuildContext context) {
     RxInt select = 0.obs;
     return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        automaticallyImplyLeading: false,
+        title: Text(
+          "Choose Language",
+          style: styleSheet.textTheme.fs24Bold,
+        ),
+      ),
       body: SafeArea(
           child: ListView(
         padding: EdgeInsets.all(10.sp),
         children: [
-          Center(
-              child: Text(
-            "Choose Language",
-            style: styleSheet.textTheme.fs24Bold,
-          )),
-          styleSheet.appServices.addheight(10),
           ...List.generate(
-            2,
+            20,
             (index) => Padding(
               padding: EdgeInsets.only(bottom: 10.h),
               child: GestureDetector(

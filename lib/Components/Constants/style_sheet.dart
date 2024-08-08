@@ -8,6 +8,7 @@ class AppColors {
   Color primary = const Color(0xff2ECC71);
   Color black = const Color(0xff000000);
   Color white = const Color(0xffFFFFFF);
+  Color transparent = const Color(0x00000000);
   Color lightwhite = const Color(0xffF1EDED);
   Color gray = const Color(0xff5D5D5D);
   Color lightgray = const Color(0xffD9D9D9);
