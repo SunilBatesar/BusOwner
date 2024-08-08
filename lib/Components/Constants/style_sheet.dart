@@ -69,9 +69,9 @@ class AppTextTheme {
   TextStyle fs14Bold =
       GoogleFonts.outfit(fontSize: 14.sp, fontWeight: FontWeight.w700);
   TextStyle fs16Bold =
-      GoogleFonts.outfit(fontSize: 16.sp, fontWeight: FontWeight.w700);
+      GoogleFonts.robotoSerif(fontSize: 16.sp, fontWeight: FontWeight.w700);
   TextStyle fs18Bold =
-      GoogleFonts.poppins(fontSize: 18.sp, fontWeight: FontWeight.w700);
+      GoogleFonts.robotoSerif(fontSize: 18.sp, fontWeight: FontWeight.w700);
   TextStyle fs24Bold =
-      GoogleFonts.poppins(fontSize: 24.sp, fontWeight: FontWeight.w700);
+      GoogleFonts.robotoSerif(fontSize: 24.sp, fontWeight: FontWeight.w700);
 }
