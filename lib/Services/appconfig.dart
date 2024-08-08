@@ -5,7 +5,7 @@ class AppConfig {
   String applogo = "assets/icons/app_logo.png";
 
   // APP SCREEN HEIGHT
-  double screenHeight = 783;
+ static double screenHeight = 783;
   // APP SCREEN WIDTH
-  double screenWidth = 392;
+ static double screenWidth = 392;
 }

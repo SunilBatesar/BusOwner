@@ -1,0 +1,2 @@
+// LANGUAGE CONST
+class LanguageConst {}

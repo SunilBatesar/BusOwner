@@ -1,5 +1,8 @@
 import 'package:bus_owner/Classes/constant_sheet.dart';
-import 'package:bus_owner/Controllers/app_initialBinding.dart';
+import 'package:bus_owner/Controllers/app_initial_binding.dart';
+import 'package:bus_owner/Preferences/sharedpreferences.dart';
+import 'package:bus_owner/Res/Apis/i18n/language_translations.dart';
+import 'package:bus_owner/Services/appconfig.dart';
 import 'package:bus_owner/Utils/Routes/app_routes.dart';
 import 'package:bus_owner/Utils/Routes/routes_name.dart';
 import 'package:flutter/material.dart';
@@ -7,7 +10,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
 late ConstantSheet styleSheet;
-void main() {
+SharedPrefe prefe = SharedPrefe.instance;
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await prefe.getpref();
   runApp(const MyApp());
 }
 
@@ -18,18 +24,23 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
         builder: (context, child) {
+          // CALL INSTANCE
           styleSheet = ConstantSheet.instance;
           return GetMaterialApp(
-            // app theme
+            // APP THEME
             theme: ThemeData(scaffoldBackgroundColor: styleSheet.colors.bgclr),
-            // Page Routes
+            // PAGE ROUTES
             getPages: appRoutes,
             initialRoute: RoutesName.splashScreen,
-            // Initial Binding
+            // INITIAL BINDING
             initialBinding: AppInitialbinding(),
+            // LANGUAGE
+            locale: LanguageTranslations.locale,
+            fallbackLocale: LanguageTranslations.fallbackLocale,
+            translations: LanguageTranslations(),
           );
         },
-        // Screen Size
-        designSize: Size(392, 783));
+        // SCREEN SIZE
+        designSize: Size(AppConfig.screenWidth, AppConfig.screenHeight));
   }
 }
