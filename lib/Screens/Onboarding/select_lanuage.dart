@@ -32,32 +32,36 @@ class SelectLanuage extends StatelessWidget {
                 languageControler.setLanguageData(language);
               },
               child: Obx(
-                () => ListTile(
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10)),
-                  tileColor: styleSheet.colors.white,
-                  leading: ClipRRect(
-                      borderRadius: BorderRadius.circular(100.sp),
-                      child: Image.asset(
-                        language.image,
-                        height: 40.h,
-                        width: 45.w,
-                        fit: BoxFit.cover,
-                      )),
-                  title: Text(
-                    language.languageName,
-                    style: styleSheet.textTheme.fs16BoldRS,
+                () => Material(
+                  borderRadius: BorderRadius.circular(10),
+                  elevation: 2,
+                  child: ListTile(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10.r)),
+                    tileColor: styleSheet.colors.white,
+                    leading: ClipRRect(
+                        borderRadius: BorderRadius.circular(100.sp),
+                        child: Image.asset(
+                          language.image,
+                          height: 40.h,
+                          width: 45.w,
+                          fit: BoxFit.cover,
+                        )),
+                    title: Text(
+                      language.languageName,
+                      style: styleSheet.textTheme.fs16BoldRS,
+                    ),
+                    trailing: languageControler.languageData.countryCode ==
+                            language.countryCode
+                        ? Icon(
+                            Icons.check_circle,
+                            color: styleSheet.colors.primary,
+                          )
+                        : Icon(
+                            Icons.circle_outlined,
+                            color: styleSheet.colors.primary,
+                          ),
                   ),
-                  trailing: languageControler.languageData.countryCode ==
-                          language.countryCode
-                      ? Icon(
-                          Icons.check_circle,
-                          color: styleSheet.colors.primary,
-                        )
-                      : Icon(
-                          Icons.circle_outlined,
-                          color: styleSheet.colors.primary,
-                        ),
                 ),
               ),
             ),
