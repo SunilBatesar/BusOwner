@@ -1,6 +1,7 @@
 import 'package:bus_owner/Components/Buttons/primary_button.dart';
 import 'package:bus_owner/Components/widget/app_logoANDname.dart';
 import 'package:bus_owner/Res/Apis/i18n/language_const.dart';
+import 'package:bus_owner/Utils/Routes/routes_name.dart';
 import 'package:bus_owner/main.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -56,7 +57,9 @@ class WelcomeScreen extends StatelessWidget {
                   PrimaryButton(
                       isexpanded: true,
                       btnName: LanguageConst.loginNow,
-                      ontap: () {})
+                      ontap: () {
+                        Get.toNamed(RoutesName.loginScreen);
+                      })
                 ],
               ),
             )
