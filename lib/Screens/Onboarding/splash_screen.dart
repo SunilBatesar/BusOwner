@@ -38,7 +38,7 @@ class _SplashScreenState extends State<SplashScreen> {
             ),
             Text(
               styleSheet.appConfig.appName,
-              style: styleSheet.textTheme.appNameTextStyle
+              style: styleSheet.textTheme.appNameTextStyle50
                   .copyWith(color: styleSheet.colors.white),
             ),
             Text(

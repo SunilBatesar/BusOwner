@@ -1,50 +1,58 @@
+import 'package:bus_owner/Components/Buttons/primary_button.dart';
+import 'package:bus_owner/Controllers/language_controller.dart';
+import 'package:bus_owner/Res/Apis/i18n/language_const.dart';
+import 'package:bus_owner/Res/Apis/i18n/language_translations.dart';
 import 'package:bus_owner/main.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
 class SelectLanuage extends StatelessWidget {
-  const SelectLanuage({super.key});
+  SelectLanuage({super.key});
+  final languageControler = Get.find<LanguageController>();
   @override
   Widget build(BuildContext context) {
-    RxInt select = 0.obs;
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
         automaticallyImplyLeading: false,
         title: Text(
           "Choose Language",
-          style: styleSheet.textTheme.fs24Bold,
+          style: styleSheet.textTheme.fs24BoldRS,
         ),
       ),
       body: SafeArea(
-          child: ListView(
-        padding: EdgeInsets.all(10.sp),
-        children: [
-          ...List.generate(
-            20,
-            (index) => Padding(
-              padding: EdgeInsets.only(bottom: 10.h),
-              child: GestureDetector(
-                onTap: () {
-                  select.value = index;
-                },
-                child: Obx(
-                  () => ListTile(
+          child: ListView(padding: EdgeInsets.all(10.sp), children: [
+        ...List.generate(LanguageTranslations.languageList.length, (index) {
+          var language = LanguageTranslations.languageList[index];
+          return Padding(
+            padding: EdgeInsets.only(bottom: 10.h),
+            child: GestureDetector(
+              onTap: () {
+                languageControler.setLanguageData(language);
+              },
+              child: Obx(
+                () => Material(
+                  borderRadius: BorderRadius.circular(10),
+                  elevation: 2,
+                  child: ListTile(
                     shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10)),
+                        borderRadius: BorderRadius.circular(10.r)),
                     tileColor: styleSheet.colors.white,
                     leading: ClipRRect(
                         borderRadius: BorderRadius.circular(100.sp),
                         child: Image.asset(
-                          "assets/icons/EnglandFlag.png",
+                          language.image,
                           height: 40.h,
+                          width: 45.w,
+                          fit: BoxFit.cover,
                         )),
                     title: Text(
-                      "English",
-                      style: styleSheet.textTheme.fs16Bold,
+                      language.languageName,
+                      style: styleSheet.textTheme.fs16BoldRS,
                     ),
-                    trailing: select.value == index
+                    trailing: languageControler.languageData.countryCode ==
+                            language.countryCode
                         ? Icon(
                             Icons.check_circle,
                             color: styleSheet.colors.primary,
@@ -57,9 +65,12 @@ class SelectLanuage extends StatelessWidget {
                 ),
               ),
             ),
-          )
-        ],
-      )),
+          );
+        }),
+      ])),
+      bottomNavigationBar: Padding(
+          padding: EdgeInsets.all(12.sp),
+          child: PrimaryButton(btnName: LanguageConst.continuE, ontap: () {})),
     );
   }
 }

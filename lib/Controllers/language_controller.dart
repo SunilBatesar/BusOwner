@@ -1,6 +1,7 @@
 import 'package:bus_owner/Models/language_model.dart';
 import 'package:bus_owner/Res/Apis/i18n/language_translations.dart';
 import 'package:bus_owner/main.dart';
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class LanguageController extends GetxController {
@@ -15,6 +16,8 @@ class LanguageController extends GetxController {
   LanguageModel get languageData => _languageData.value;
   // SET LANGUAGE
   setLanguageData(LanguageModel model) {
+    final localevalue = Locale(model.languageCode, model.countryCode);
+    Get.updateLocale(localevalue);
     _languageData.value = model;
     // SET LANGUAGE IN SHARED PREFERENCE
     prefe.setLanguagePrefe(model: model);
