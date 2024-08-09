@@ -1,4 +1,4 @@
 // LANGUAGE CONST
 class LanguageConst {
-  static String welcome = "welcome";
+  static String continuE = "continue";
 }

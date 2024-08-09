@@ -1,3 +1,4 @@
+import 'package:bus_owner/Components/Buttons/primary_button.dart';
 import 'package:bus_owner/Controllers/language_controller.dart';
 import 'package:bus_owner/Res/Apis/i18n/language_const.dart';
 import 'package:bus_owner/Res/Apis/i18n/language_translations.dart';
@@ -17,7 +18,7 @@ class SelectLanuage extends StatelessWidget {
         automaticallyImplyLeading: false,
         title: Text(
           "Choose Language",
-          style: styleSheet.textTheme.fs24Bold,
+          style: styleSheet.textTheme.fs24BoldRS,
         ),
       ),
       body: SafeArea(
@@ -45,7 +46,7 @@ class SelectLanuage extends StatelessWidget {
                       )),
                   title: Text(
                     language.languageName,
-                    style: styleSheet.textTheme.fs16Bold,
+                    style: styleSheet.textTheme.fs16BoldRS,
                   ),
                   trailing: languageControler.languageData.countryCode ==
                           language.countryCode
@@ -62,8 +63,10 @@ class SelectLanuage extends StatelessWidget {
             ),
           );
         }),
-        Text(LanguageConst.welcome.tr),
       ])),
+      bottomNavigationBar: Padding(
+          padding: EdgeInsets.all(12.sp),
+          child: PrimaryButton(btnName: LanguageConst.continuE, ontap: () {})),
     );
   }
 }
