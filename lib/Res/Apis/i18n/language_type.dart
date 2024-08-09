@@ -5,9 +5,26 @@ class LanguageType {
   // ENGLISH MAP DATA
   static final Map<String, String> english = {
     LanguageConst.continuE: "Continue",
+
+    // welcome screen ENGLISH LANGUAGE START ----->
+    LanguageConst.welcome: "Welcome",
+    LanguageConst.welcometitle:
+        "Let's pick your next bus ticket from\njai Bala ji",
+    LanguageConst.welcomesubtitle:
+        "Offering a user-friendly interface and flexible options for a stress-free travel experience. Simplify your journey choose jai Bala ji today.",
+    LanguageConst.signupNow: "Signup Now",
+    LanguageConst.loginNow: "Login Now"
   };
   // HINDI MAP DATA
   static final Map<String, String> hindi = {
     LanguageConst.continuE: "जारी रखना",
+
+    // welcome screen HINDI LANGUAGE START ----->
+    LanguageConst.welcome: "स्वागत",
+    LanguageConst.welcometitle: "आइए jai Bala ji से अपना अगला बस टिकट चुनें",
+    LanguageConst.welcomesubtitle:
+        "तनाव मुक्त यात्रा अनुभव के लिए उपयोगकर्ता-अनुकूल इंटरफ़ेस और लचीले विकल्प प्रदान करना। अपनी यात्रा को सरल बनाएँ, आज ही jai Bala ji चुनें।",
+    LanguageConst.signupNow: "अभी साइनअप करें",
+    LanguageConst.loginNow: "अभी लॉगिन करें",
   };
 }

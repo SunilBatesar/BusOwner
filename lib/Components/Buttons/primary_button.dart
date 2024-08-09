@@ -7,13 +7,18 @@ class PrimaryButton extends StatelessWidget {
   final String btnName;
   final Function ontap;
   final Color? bgColor;
+  final bool isexpanded;
   const PrimaryButton(
-      {super.key, required this.btnName, required this.ontap, this.bgColor});
+      {super.key,
+      required this.btnName,
+      required this.ontap,
+      this.bgColor,
+      this.isexpanded = false});
 
   @override
   Widget build(BuildContext context) {
-    return TextButton(
-      onPressed: ontap(),
+    final btn = TextButton(
+      onPressed: () => ontap(),
       style: TextButton.styleFrom(
           backgroundColor: bgColor ?? styleSheet.colors.secondary,
           shape: RoundedRectangleBorder(
@@ -24,5 +29,12 @@ class PrimaryButton extends StatelessWidget {
             .copyWith(color: styleSheet.colors.white),
       ),
     );
+    return isexpanded
+        ? Row(
+            children: [
+              Expanded(child: btn),
+            ],
+          )
+        : btn;
   }
 }

@@ -2,6 +2,7 @@ import 'package:bus_owner/Components/Buttons/primary_button.dart';
 import 'package:bus_owner/Controllers/language_controller.dart';
 import 'package:bus_owner/Res/Apis/i18n/language_const.dart';
 import 'package:bus_owner/Res/Apis/i18n/language_translations.dart';
+import 'package:bus_owner/Utils/Routes/routes_name.dart';
 import 'package:bus_owner/main.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -70,7 +71,11 @@ class SelectLanuage extends StatelessWidget {
       ])),
       bottomNavigationBar: Padding(
           padding: EdgeInsets.all(12.sp),
-          child: PrimaryButton(btnName: LanguageConst.continuE, ontap: () {})),
+          child: PrimaryButton(
+              btnName: LanguageConst.continuE,
+              ontap: () {
+                Get.toNamed(RoutesName.welcomeScreen);
+              })),
     );
   }
 }

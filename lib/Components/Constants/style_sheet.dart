@@ -11,7 +11,7 @@ class AppColors {
   Color white = const Color(0xffFFFFFF);
   Color transparent = const Color(0x00000000);
   Color lightwhite = const Color(0xffF1EDED);
-  Color gray = const Color(0xff5D5D5D);
+  Color gray = const Color(0xff4A4A4A);
   Color lightgray = const Color(0xffD9D9D9);
   Color darkgray = const Color(0xffB3B3BA);
 }
@@ -19,6 +19,8 @@ class AppColors {
 class AppTextTheme {
   AppTextTheme();
   // APP TextStyle
+  TextStyle appNameTextStyle30 =
+      GoogleFonts.dancingScript(fontSize: 30.sp, fontWeight: FontWeight.w500);
   TextStyle appNameTextStyle50 =
       GoogleFonts.dancingScript(fontSize: 50.sp, fontWeight: FontWeight.w500);
 
@@ -30,10 +32,16 @@ class AppTextTheme {
       GoogleFonts.poppins(fontSize: 16.sp, fontWeight: FontWeight.w400);
 
   // MEDIUM
+  TextStyle fs12Medium =
+      GoogleFonts.poppins(fontSize: 12.sp, fontWeight: FontWeight.w500);
   TextStyle fs18Medium =
       GoogleFonts.poppins(fontSize: 18.sp, fontWeight: FontWeight.w500);
   TextStyle fs20Medium =
       GoogleFonts.poppins(fontSize: 20.sp, fontWeight: FontWeight.w500);
+
+  // sami bold
+  TextStyle fs16samibold =
+      GoogleFonts.poppins(fontSize: 16.sp, fontWeight: FontWeight.w600);
 
   //bold
   TextStyle fs14bold =
