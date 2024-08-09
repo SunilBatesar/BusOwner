@@ -12,7 +12,7 @@ class AppColors {
   Color transparent = const Color(0x00000000);
   Color lightwhite = const Color(0xffF1EDED);
   Color gray = const Color(0xff4A4A4A);
-  Color lightgray = const Color(0xffD9D9D9);
+  Color lightgray = const Color(0xff667085);
   Color mediumgray = const Color(0xff475467);
 }
 

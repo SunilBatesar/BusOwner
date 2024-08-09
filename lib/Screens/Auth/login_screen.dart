@@ -1,3 +1,4 @@
+import 'package:bus_owner/Components/textfield/primary_textfield.dart';
 import 'package:bus_owner/Components/widget/app_logoANDname.dart';
 import 'package:bus_owner/Res/Apis/i18n/language_const.dart';
 import 'package:bus_owner/main.dart';
@@ -31,7 +32,9 @@ class LoginScreen extends StatelessWidget {
                 LanguageConst.email.tr,
                 style: styleSheet.textTheme.fs14Medium
                     .copyWith(color: styleSheet.colors.mediumgray),
-              )
+              ),
+              styleSheet.appServices.addheight(10),
+              PrimaryTextfield()
             ],
           ),
         ),
