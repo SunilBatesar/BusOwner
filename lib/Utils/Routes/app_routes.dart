@@ -8,7 +8,7 @@ import 'package:get/get.dart';
 final List<GetPage<dynamic>> appRoutes = [
   // Onboarding
   GetPage(name: RoutesName.splashScreen, page: () => const SplashScreen()),
-  GetPage(name: RoutesName.selectLanuage, page: () => const SelectLanuage()),
+  GetPage(name: RoutesName.selectLanuage, page: () => SelectLanuage()),
 
   // Auth
   GetPage(name: RoutesName.loginScreen, page: () => const LoginScreen()),

@@ -1,2 +1,4 @@
 // LANGUAGE CONST
-class LanguageConst {}
+class LanguageConst {
+  static String welcome = "welcome";
+}

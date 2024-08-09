@@ -4,10 +4,13 @@ class LanguageModel {
   String languageName;
   String languageCode;
   String countryCode;
-  LanguageModel(
-      {required this.languageName,
-      required this.languageCode,
-      required this.countryCode});
+  String image;
+  LanguageModel({
+    required this.languageName,
+    required this.languageCode,
+    required this.countryCode,
+    required this.image,
+  });
 
   @override
   String toString() {
@@ -18,6 +21,7 @@ class LanguageModel {
         "languageName": languageName,
         "languageCode": languageCode,
         "countryCode": countryCode,
+        "image": image,
       });
 
   factory LanguageModel.fromjson({required String json}) {
@@ -26,7 +30,8 @@ class LanguageModel {
     return LanguageModel(
         languageName: data["languageName"] ?? "English",
         languageCode: data["languageCode"] ?? "en",
-        countryCode: data["countryCode"] ?? "US");
+        countryCode: data["countryCode"] ?? "US",
+        image: data["image"] ?? "assets/icons/usFlag.png");
   }
 
   @override

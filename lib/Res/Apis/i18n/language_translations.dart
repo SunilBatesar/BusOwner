@@ -6,9 +6,15 @@ import 'package:get/get.dart';
 class LanguageTranslations extends Translations {
   // LANGUAGE SET IN MODEL
   static LanguageModel english = LanguageModel(
-      languageName: "English", languageCode: "en", countryCode: "US");
+      languageName: "English",
+      languageCode: "en",
+      countryCode: "US",
+      image: "assets/icons/usFlag.png");
   static LanguageModel hindi = LanguageModel(
-      languageName: "Hindi", languageCode: "hi", countryCode: "IN");
+      languageName: "Hindi",
+      languageCode: "hi",
+      countryCode: "IN",
+      image: "assets/icons/indiaFlag.png");
 
   // LOCALE LANGUAGE
   static Locale locale = Locale(english.languageCode, english.countryCode);
