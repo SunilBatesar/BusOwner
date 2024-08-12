@@ -29,15 +29,21 @@ class MyApp extends StatelessWidget {
           return GetMaterialApp(
             // APP THEME
             theme: ThemeData(scaffoldBackgroundColor: styleSheet.colors.bgclr),
+
             // PAGE ROUTES
             getPages: appRoutes,
             initialRoute: RoutesName.splashScreen,
+
             // INITIAL BINDING
             initialBinding: AppInitialbinding(),
+
             // LANGUAGE
             locale: LanguageTranslations.locale,
             fallbackLocale: LanguageTranslations.fallbackLocale,
             translations: LanguageTranslations(),
+
+            // debug banner
+            debugShowCheckedModeBanner: false,
           );
         },
         // SCREEN SIZE
