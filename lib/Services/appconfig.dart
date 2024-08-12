@@ -1,6 +1,6 @@
 class AppConfig {
   // APP NAME
-  String appName = "jai Bala ji";
+  String appName = "Jai Bala Ji";
   // APP LOGO
   String applogo = "assets/images/app_logo.png";
 

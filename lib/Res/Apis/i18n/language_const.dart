@@ -6,9 +6,9 @@ class LanguageConst {
 // welcome screen
   static String welcome = "Welcome";
   static String welcometitle =
-      "Let's pick your next bus ticket from\njai Bala ji";
+      "Let's pick your next bus ticket from\nJai Bala Ji";
   static String welcomesubtitle =
-      "Offering a user-friendly interface and flexible options for a stress-free travel experience. Simplify your journey choose jai Bala ji today";
+      "Offering a user-friendly interface and flexible options for a stress-free travel experience. Simplify your journey choose Jai Bala Ji today";
   static String signupNow = "Signup Now";
   static String loginNow = "Login Now";
 // onbording ENGLISH cost end

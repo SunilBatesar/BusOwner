@@ -21,9 +21,9 @@ class AppTextTheme {
   // different font dancingScript===>
   // APP TextStyle
   TextStyle appNameTextStyle30 =
-      GoogleFonts.dancingScript(fontSize: 30.sp, fontWeight: FontWeight.w500);
+      GoogleFonts.parisienne(fontSize: 30.sp, fontWeight: FontWeight.w500);
   TextStyle appNameTextStyle50 =
-      GoogleFonts.dancingScript(fontSize: 50.sp, fontWeight: FontWeight.w500);
+      GoogleFonts.parisienne(fontSize: 50.sp, fontWeight: FontWeight.w500);
 
   // different font poppins===>
   // NORMAL
@@ -50,7 +50,7 @@ class AppTextTheme {
   TextStyle fs14bold =
       GoogleFonts.poppins(fontSize: 14.sp, fontWeight: FontWeight.w700);
 
-  // different font robotoSerif===>
+  // different font style robotoSerif===>
   // sami bold robotoSerif
   TextStyle fs20BoldRS =
       GoogleFonts.robotoSerif(fontSize: 20.sp, fontWeight: FontWeight.w600);

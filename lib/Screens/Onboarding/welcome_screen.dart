@@ -1,5 +1,5 @@
 import 'package:bus_owner/Components/Buttons/primary_button.dart';
-import 'package:bus_owner/Components/widget/app_logoANDname.dart';
+import 'package:bus_owner/Components/widget/app_logo_and_name.dart';
 import 'package:bus_owner/Res/Apis/i18n/language_const.dart';
 import 'package:bus_owner/Utils/Routes/routes_name.dart';
 import 'package:bus_owner/main.dart';
