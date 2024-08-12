@@ -3,7 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class PrimaryTextfield extends StatelessWidget {
-  const PrimaryTextfield({super.key});
+  final String hintText;
+  final IconData? sufixIcon;
+  final Function? onSufixPressed;
+  const PrimaryTextfield(
+      {super.key, required this.hintText, this.sufixIcon, this.onSufixPressed});
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +16,7 @@ class PrimaryTextfield extends StatelessWidget {
           isDense: true,
           fillColor: styleSheet.colors.white,
           filled: true,
-          hintText: "Enter your email",
+          hintText: hintText,
           hintStyle: styleSheet.textTheme.fs14Normal
               .copyWith(color: styleSheet.colors.lightgray),
           border: OutlineInputBorder(
@@ -24,10 +28,15 @@ class PrimaryTextfield extends StatelessWidget {
           enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(7.r),
               borderSide: BorderSide(color: styleSheet.colors.gray)),
-          suffixIcon: Icon(
-            Icons.visibility,
-            color: styleSheet.colors.primary,
-          )),
+          suffixIcon: sufixIcon != null
+              ? IconButton(
+                  onPressed:
+                      onSufixPressed != null ? () => onSufixPressed!() : null,
+                  icon: Icon(
+                    sufixIcon,
+                    color: styleSheet.colors.primary,
+                  ))
+              : const SizedBox()),
     );
   }
 }

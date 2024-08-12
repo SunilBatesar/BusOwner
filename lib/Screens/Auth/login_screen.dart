@@ -34,7 +34,9 @@ class LoginScreen extends StatelessWidget {
                     .copyWith(color: styleSheet.colors.mediumgray),
               ),
               styleSheet.appServices.addheight(10),
-              PrimaryTextfield()
+              PrimaryTextfield(
+                hintText: "Enter your email",
+              )
             ],
           ),
         ),
