@@ -22,4 +22,12 @@ class LanguageConst {
   static String rememberMe = "Remember Me";
   static String forgotPassword = "Forgot Password";
   static String dontAccount = "I don’t have an account?";
+  // signup
+  static String createNewAccountHeadline = "Create a new Account with us!";
+  static String fullName = "Full Name";
+  static String fullNamehint = "Enter your name";
+  static String reTypePassword = "Re-type password";
+  static String reTypePasswordhint = "re-enter your password";
+  static String iAgreeCondition = "I agree term’s and Conditions";
+  static String alreadyAccount = "Already have an account?";
 }

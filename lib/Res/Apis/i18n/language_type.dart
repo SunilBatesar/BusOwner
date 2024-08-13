@@ -27,6 +27,14 @@ class LanguageType {
     LanguageConst.rememberMe: "Remember Me",
     LanguageConst.forgotPassword: "Forgot Password",
     LanguageConst.dontAccount: "I don’t have an account?",
+    // signup
+    LanguageConst.createNewAccountHeadline: "Create a new Account with us!",
+    LanguageConst.fullName: "Full Name",
+    LanguageConst.fullNamehint: "Enter your name",
+    LanguageConst.reTypePassword: "Re-type password",
+    LanguageConst.reTypePasswordhint: "re-enter your password",
+    LanguageConst.iAgreeCondition: "I agree term’s and Conditions",
+    LanguageConst.alreadyAccount: "Already have an account?",
   };
   // ==========================================================================================
   // ==========================================================================================
@@ -53,5 +61,13 @@ class LanguageType {
     LanguageConst.rememberMe: "मुझे याद करो",
     LanguageConst.forgotPassword: "पासवर्ड भूल गए",
     LanguageConst.dontAccount: "मेरे पास खाता नहीं है?",
+    // signup
+    LanguageConst.createNewAccountHeadline: "हमारे साथ एक नया खाता बनाएं!",
+    LanguageConst.fullName: "पूरा नाम",
+    LanguageConst.fullNamehint: "अपना नाम दर्ज करें",
+    LanguageConst.reTypePassword: "पासवर्ड फिर से लिखें",
+    LanguageConst.reTypePasswordhint: "अपना पासवर्ड फिर से दर्ज करें",
+    LanguageConst.iAgreeCondition: "मैं नियम एवं शर्तों से सहमत हूं",
+    LanguageConst.alreadyAccount: "क्या आपके पास पहले से एक खाता मौजूद है?",
   };
 }

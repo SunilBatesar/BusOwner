@@ -24,6 +24,7 @@ class LoginScreen extends StatelessWidget {
   // ===========================
   final RxBool _passwordVisible = true.obs;
   final RxBool _isChecked = false.obs;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,16 +35,16 @@ class LoginScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                styleSheet.appServices.addheight(15),
+                styleSheet.appServices.addheight(10),
                 const Center(
                   child: AppLogoandname(),
                 ),
-                styleSheet.appServices.addheight(20),
+                styleSheet.appServices.addheight(15),
                 Center(
                   child: Text(LanguageConst.welcome.tr,
                       style: styleSheet.textTheme.fs20BoldRS),
                 ),
-                styleSheet.appServices.addheight(20),
+                styleSheet.appServices.addheight(15),
                 Text(
                   LanguageConst.email.tr,
                   style: styleSheet.textTheme.fs14Medium
@@ -59,7 +60,7 @@ class LoginScreen extends StatelessWidget {
                         context, _emailFocusNode, _passwordFocusNode);
                   },
                 ),
-                styleSheet.appServices.addheight(20),
+                styleSheet.appServices.addheight(15),
                 Text(
                   LanguageConst.password.tr,
                   style: styleSheet.textTheme.fs14Medium
