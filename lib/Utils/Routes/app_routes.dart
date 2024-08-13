@@ -13,7 +13,7 @@ final List<GetPage<dynamic>> appRoutes = [
   GetPage(name: RoutesName.welcomeScreen, page: () => const WelcomeScreen()),
 
   // Auth
-  GetPage(name: RoutesName.loginScreen, page: () => const LoginScreen()),
+  GetPage(name: RoutesName.loginScreen, page: () => LoginScreen()),
 
   // Home
   GetPage(name: RoutesName.homeScreen, page: () => const HomeScreen()),

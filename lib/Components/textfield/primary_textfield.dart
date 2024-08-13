@@ -7,17 +7,27 @@ class PrimaryTextfield extends StatelessWidget {
   final IconData? sufixIcon;
   final Function? onSufixPressed;
   final bool obsecure;
+  final Function(String?)? onsubmitedfun;
+  final FocusNode? focusNode;
+  final TextEditingController? controller;
   const PrimaryTextfield(
       {super.key,
       required this.hintText,
       this.sufixIcon,
       this.onSufixPressed,
-      this.obsecure = false});
+      this.obsecure = false,
+      this.onsubmitedfun,
+      this.focusNode,
+      this.controller});
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      focusNode: focusNode,
+      controller: controller,
       obscureText: obsecure,
+      onFieldSubmitted:
+          onsubmitedfun == null ? null : (value) => onsubmitedfun!(value),
       decoration: InputDecoration(
           isDense: true,
           fillColor: styleSheet.colors.white,
