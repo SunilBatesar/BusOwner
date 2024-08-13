@@ -19,8 +19,17 @@ class LanguageType {
 
     // AUTHENTICATION ENGLISH LANGUAGE START ----->
     // login
-    LanguageConst.email: "Email"
+    LanguageConst.email: "Email",
+    LanguageConst.emailhint: "Enter your email",
+    LanguageConst.password: "Password",
+    LanguageConst.passwordhint: "Enter your password",
+    LanguageConst.passwordhint: "Enter your password",
+    LanguageConst.rememberMe: "Remember Me",
+    LanguageConst.forgotPassword: "Forgot Password",
+    LanguageConst.dontAccount: "I don’t have an account?",
   };
+  // ==========================================================================================
+  // ==========================================================================================
   // HINDI MAP DATA
   static final Map<String, String> hindi = {
     LanguageConst.continuE: "जारी रखना",
@@ -38,5 +47,11 @@ class LanguageType {
     // AUTHENTICATION ENGLISH LANGUAGE START ----->
     // login
     LanguageConst.email: "ईमेल",
+    LanguageConst.emailhint: "अपना ईमेल दर्ज करें",
+    LanguageConst.password: "पासवर्ड",
+    LanguageConst.passwordhint: "अपना पासवर्ड दर्ज करें",
+    LanguageConst.rememberMe: "मुझे याद करो",
+    LanguageConst.forgotPassword: "पासवर्ड भूल गए",
+    LanguageConst.dontAccount: "मेरे पास खाता नहीं है?",
   };
 }

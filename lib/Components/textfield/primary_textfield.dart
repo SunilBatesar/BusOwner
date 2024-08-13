@@ -6,12 +6,18 @@ class PrimaryTextfield extends StatelessWidget {
   final String hintText;
   final IconData? sufixIcon;
   final Function? onSufixPressed;
+  final bool obsecure;
   const PrimaryTextfield(
-      {super.key, required this.hintText, this.sufixIcon, this.onSufixPressed});
+      {super.key,
+      required this.hintText,
+      this.sufixIcon,
+      this.onSufixPressed,
+      this.obsecure = false});
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      obscureText: obsecure,
       decoration: InputDecoration(
           isDense: true,
           fillColor: styleSheet.colors.white,

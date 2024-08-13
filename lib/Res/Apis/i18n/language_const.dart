@@ -16,4 +16,10 @@ class LanguageConst {
 // AUTHENTICATION ENGLISH COST START ----->
 // login
   static String email = "Email";
+  static String emailhint = "Enter your email";
+  static String password = "Password";
+  static String passwordhint = "Enter your password";
+  static String rememberMe = "Remember Me";
+  static String forgotPassword = "Forgot Password";
+  static String dontAccount = "I don’t have an account?";
 }
