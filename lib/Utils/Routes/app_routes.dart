@@ -1,4 +1,5 @@
 import 'package:bus_owner/Screens/Auth/login_screen.dart';
+import 'package:bus_owner/Screens/Auth/signup_screen.dart';
 import 'package:bus_owner/Screens/Home/home_screen.dart';
 import 'package:bus_owner/Screens/Onboarding/select_lanuage.dart';
 import 'package:bus_owner/Screens/Onboarding/splash_screen.dart';
@@ -14,6 +15,7 @@ final List<GetPage<dynamic>> appRoutes = [
 
   // Auth
   GetPage(name: RoutesName.loginScreen, page: () => LoginScreen()),
+  GetPage(name: RoutesName.signupScreen, page: () => SignupScreen()),
 
   // Home
   GetPage(name: RoutesName.homeScreen, page: () => const HomeScreen()),

@@ -52,7 +52,9 @@ class WelcomeScreen extends StatelessWidget {
                       bgColor: styleSheet.colors.primary,
                       isexpanded: true,
                       btnName: LanguageConst.signupNow,
-                      ontap: () {}),
+                      ontap: () {
+                        Get.toNamed(RoutesName.signupScreen);
+                      }),
                   styleSheet.appServices.addheight(10),
                   PrimaryButton(
                       isexpanded: true,

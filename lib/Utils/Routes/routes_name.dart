@@ -6,6 +6,7 @@ class RoutesName {
 
   // Auth
   static const String loginScreen = "/LoginScreen";
+  static const String signupScreen = "/SignupScreen";
 
   // Home
   static const String homeScreen = "/HomeScreen";

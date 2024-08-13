@@ -2,6 +2,7 @@ import 'package:bus_owner/Components/Buttons/primary_button.dart';
 import 'package:bus_owner/Components/textfield/primary_textfield.dart';
 import 'package:bus_owner/Components/widget/app_logo_and_name.dart';
 import 'package:bus_owner/Res/Apis/i18n/language_const.dart';
+import 'package:bus_owner/Utils/Routes/routes_name.dart';
 import 'package:bus_owner/Utils/app_utils.dart';
 import 'package:bus_owner/main.dart';
 import 'package:flutter/gestures.dart';
@@ -125,7 +126,10 @@ class LoginScreen extends StatelessWidget {
                       text: LanguageConst.signupNow.tr,
                       style: styleSheet.textTheme.fs12Medium
                           .copyWith(decoration: TextDecoration.underline),
-                      recognizer: TapGestureRecognizer()..onTap = () {})
+                      recognizer: TapGestureRecognizer()
+                        ..onTap = () {
+                          Get.toNamed(RoutesName.signupScreen);
+                        })
                 ]))
               ],
             ),
