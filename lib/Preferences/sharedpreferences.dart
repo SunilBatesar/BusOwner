@@ -10,11 +10,6 @@ class SharedPrefe {
     _preferences = await SharedPreferences.getInstance();
   }
 
-
-// From Main Branch
-
-
-
   //  ALL PREFERENCES KEYS
   static get languageKey => "languageKey";
 
