@@ -32,6 +32,7 @@ class LanguageModel {
         languageCode: data["languageCode"] ?? "en",
         countryCode: data["countryCode"] ?? "US",
         image: data["image"] ?? "assets/icons/usFlag.png");
+      
   }
 
   @override
