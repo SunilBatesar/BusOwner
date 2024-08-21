@@ -30,4 +30,12 @@ class LanguageConst {
   static String reTypePasswordhint = "re-enter your password";
   static String iAgreeCondition = "I agree term’s and Conditions";
   static String alreadyAccount = "Already have an account?";
+  // ForgotPassword
+  static String forgotTitle =
+      "Enter your email address and we will \nsend you the reset link";
+  static String resetPassword = "RESET PASSWORD";
+  static String havingProglam = "Having a problem ?";
+  static String resendTime = "Resend in";
+  static String resendTost =
+      "We have just sent a instructions email to abc@gmail.com";
 }

@@ -35,6 +35,14 @@ class LanguageType {
     LanguageConst.reTypePasswordhint: "re-enter your password",
     LanguageConst.iAgreeCondition: "I agree term’s and Conditions",
     LanguageConst.alreadyAccount: "Already have an account?",
+    // ForgotPassword
+    LanguageConst.forgotTitle:
+        "Enter your email address and we will \nsend you the reset link",
+    LanguageConst.resetPassword: "RESET PASSWORD",
+    LanguageConst.havingProglam: "Having a problem ?",
+    LanguageConst.resendTime: "Resend in",
+    LanguageConst.resendTost:
+        "We have just sent a instructions email to abc@gmail.com",
   };
   // ==========================================================================================
   // ==========================================================================================
@@ -69,5 +77,13 @@ class LanguageType {
     LanguageConst.reTypePasswordhint: "अपना पासवर्ड फिर से दर्ज करें",
     LanguageConst.iAgreeCondition: "मैं नियम एवं शर्तों से सहमत हूं",
     LanguageConst.alreadyAccount: "क्या आपके पास पहले से एक खाता मौजूद है?",
+    // ForgotPassword
+    LanguageConst.forgotTitle:
+        "अपना ईमेल पता दर्ज करें और हम आपको\nरीसेट लिंक भेज देंगे",
+    LanguageConst.resetPassword: "पासवर्ड रीसेट",
+    LanguageConst.havingProglam: "कोई समस्या है?",
+    LanguageConst.resendTime: "पुनः भेजें",
+    LanguageConst.resendTost:
+        "हमने अभी abc@gmail.com पर एक निर्देश ईमेल भेजा है",
   };
 }
