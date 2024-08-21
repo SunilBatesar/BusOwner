@@ -1,3 +1,4 @@
+import 'package:bus_owner/Screens/Auth/forgot_password.dart';
 import 'package:bus_owner/Screens/Auth/login_screen.dart';
 import 'package:bus_owner/Screens/Auth/signup_screen.dart';
 import 'package:bus_owner/Screens/Home/home_screen.dart';
@@ -16,6 +17,7 @@ final List<GetPage<dynamic>> appRoutes = [
   // Auth
   GetPage(name: RoutesName.loginScreen, page: () => LoginScreen()),
   GetPage(name: RoutesName.signupScreen, page: () => SignupScreen()),
+  GetPage(name: RoutesName.forgotPassword, page: () => const ForgotPassword()),
 
   // Home
   GetPage(name: RoutesName.homeScreen, page: () => const HomeScreen()),
