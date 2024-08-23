@@ -10,7 +10,7 @@ import 'package:get/get.dart';
 class ForgotPassword extends StatelessWidget {
   ForgotPassword({super.key});
 
-  // all controller
+  // all Controller
   final TextEditingController _emailController = TextEditingController();
 
   @override
