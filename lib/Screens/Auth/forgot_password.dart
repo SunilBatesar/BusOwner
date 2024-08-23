@@ -54,7 +54,7 @@ class ForgotPassword extends StatelessWidget {
                   isexpanded: true,
                   btnName: LanguageConst.resetPassword,
                   ontap: () {
-                    Get.snackbar(LanguageConst.resendTost, '');
+                    Get.snackbar(LanguageConst.resendTost.tr, '');
                   }),
               styleSheet.appServices.addheight(10),
               Row(
