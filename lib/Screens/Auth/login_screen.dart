@@ -104,7 +104,9 @@ class LoginScreen extends StatelessWidget {
                       ],
                     ),
                     TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Get.toNamed(RoutesName.forgotPassword);
+                        },
                         child: Text(
                           LanguageConst.forgotPassword.tr,
                           style: styleSheet.textTheme.fs12Medium
